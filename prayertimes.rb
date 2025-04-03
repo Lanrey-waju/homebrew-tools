@@ -5,21 +5,21 @@
 class Prayertimes < Formula
   desc "A CLI tool for retrieving Islamic prayer times"
   homepage "https://github.com/lanrey-waju/prayertimes"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Lanrey-waju/prayertimes/releases/download/v0.1.1/prayertimes_Darwin_x86_64.tar.gz"
-      sha256 "3ca91d1f0a8d33311727a86c4f9542d3b16e2785b5c080d44aa13800cc65d70a"
+      url "https://github.com/Lanrey-waju/prayertimes/releases/download/v0.1.2/prayertimes_Darwin_x86_64.tar.gz"
+      sha256 "1d7e99185393f4d28a559e69574f5d26b5f96349e95d456ff837a66227e7dd2f"
 
       def install
         bin.install "prayertimes"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Lanrey-waju/prayertimes/releases/download/v0.1.1/prayertimes_Darwin_arm64.tar.gz"
-      sha256 "843ee06818415d3790ad97b997f62d335596a41428ec641343106616cdf16299"
+      url "https://github.com/Lanrey-waju/prayertimes/releases/download/v0.1.2/prayertimes_Darwin_arm64.tar.gz"
+      sha256 "71eb1a27d097aec37217d5c721c1f1b4adc29b5f3eb5600a753a3c5adca7f503"
 
       def install
         bin.install "prayertimes"
@@ -30,8 +30,8 @@ class Prayertimes < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Lanrey-waju/prayertimes/releases/download/v0.1.1/prayertimes_Linux_x86_64.tar.gz"
-        sha256 "c6532f85e1454c9e2132dd75f7b71647e0e6b18eb7f9863ee52beea9d0d56ebd"
+        url "https://github.com/Lanrey-waju/prayertimes/releases/download/v0.1.2/prayertimes_Linux_x86_64.tar.gz"
+        sha256 "6efce77cc02b1368999973d80474ef85420d0899655d7f126417df6f5907f066"
 
         def install
           bin.install "prayertimes"
@@ -40,8 +40,8 @@ class Prayertimes < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Lanrey-waju/prayertimes/releases/download/v0.1.1/prayertimes_Linux_arm64.tar.gz"
-        sha256 "d67c41b19ed340b81b44410cf89a47cabdabf07cfd2da54fdfe925d0db294947"
+        url "https://github.com/Lanrey-waju/prayertimes/releases/download/v0.1.2/prayertimes_Linux_arm64.tar.gz"
+        sha256 "bac3f90ef9841652aabf1d8fbc3f396e30cd2f88439805faf27c0422b12dc0e5"
 
         def install
           bin.install "prayertimes"
